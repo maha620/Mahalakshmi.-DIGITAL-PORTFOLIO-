@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahalakshmi.D - Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #6A5ACD;
+      color: #FFFFFF;
+      text-align: center;
+      scroll-behavior: smooth;
+    }
+
+    /* Navigation */
+    nav {
+      background: #111;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #FFD700;
+    }
+
+    /* Header */
+    header {
+      background: #222;
+      padding: 30px 0;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      object-fit: cover;
+    }
+    header h1 { margin: 15px 0 5px; font-size: 26px; }
+    header p { font-size: 14px; color: #ccc; }
+
+    section { padding: 40px 20px; }
+    h2 { margin-bottom: 20px; font-size: 24px; }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .project-card {
+      background: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+      width: 280px;
+      text-align: left;
+      transition: 0.3s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    /* Contact */
+    .contact-form {
+      max-width: 400px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: #222;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #444;
+    }
+
+    footer {
+      background: #111;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .projects { flex-direction: column; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <img src="Mahalakshmi.D.jpg" alt="Mahalakshmi.D">
+    <h1>Mahalakshmi.D</h1>
+    <p>Student | Web Developer | Tech Enthusiast</p>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a student enthusiastic about technology and design.
+       I love building interactive, user-friendly web applications 
+       and exploring new tools in the tech world.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Webpage</h3>
+        <img src="html-css-js.png" alt="HTML CSS JS">
+        <p>A simple responsive portfolio webpage built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <h3>Python Password Generator</h3>
+        <img src="python-logo.png" alt="Python Logo">
+        <p>A Python project that generates strong random passwords with customizable length and characters.</p>
+      </div>
+      <div class="project-card">
+        <h3>JavaScript Quiz App</h3>
+        <img src="quiz.png" alt="Quiz App">
+        <p>An interactive quiz app with multiple-choice questions, score tracking, and responsive design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Mahalakshmi.D | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
